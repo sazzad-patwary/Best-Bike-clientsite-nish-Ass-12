@@ -6,21 +6,24 @@ import { Typography } from '@mui/material';
 
 const Gallery = () => {
     return (
-        <div sx={{my:10}} style={{ paddingLeft: "300px" }}>
-            <Typography sx={{ pl: 30 }} variant="h3">Bike Gallery</Typography>
-            <ImageList sx={{ width: 800, height: 450 }} cols={3} rowHeight={164}>
-                {itemData.map((item) => (
-                    <ImageListItem key={item.img}>
-                        <img
-                            src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                            srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                            alt={item.title}
-                            loading="lazy"
-                        />
-                    </ImageListItem>
-                ))}
-            </ImageList>
-        </div>
+        <>
+            <Typography sx={{ py: 5, textAlign: 'center' }} variant="h3">Bike Gallery</Typography>
+            <div sx={{ my: 10 }} style={{ paddingLeft: "300px" }}>
+
+                <ImageList sx={{ width: 800, height: 450 }} cols={3} rowHeight={164}>
+                    {itemData.map((item) => (
+                        <ImageListItem key={item.img}>
+                            <img
+                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                alt={item.title}
+                                loading="lazy"
+                            />
+                        </ImageListItem>
+                    ))}
+                </ImageList>
+            </div>
+        </>
     );
 };
 

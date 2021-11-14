@@ -35,8 +35,8 @@ const Register = () => {
     return (
         <div>
             <Navigation></Navigation>
-            <Container>
-                <div sx={{ ml: 20, p: 5 }}>
+            <Container sx={{ my: 10 }}>
+                <div>
                     {!isLoading && <form onSubmit={handleLoginSubmit}>
                         <TextField
                             sx={{ width: '50%', m: 1 }}

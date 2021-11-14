@@ -1,6 +1,8 @@
+import { Typography } from '@mui/material';
 import axios from 'axios';
 import React from 'react';
 import { useForm } from "react-hook-form";
+import './AddProducts.css'
 
 const AddProducts = () => {
     const { register, handleSubmit } = useForm();
@@ -13,11 +15,12 @@ const AddProducts = () => {
             })
     }
     return (
-        <div>
-            <h1>Add a Products</h1>
+        <div className="add-product">
+            <Typography sx={{ py: 5, textAlign: 'center' }} variant="h3">Add a Product</Typography>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input {...register("name", { required: true, maxLength: 20 })} />
-                <textarea {...register("description")} placeholder="Your comment about our services" />
+                <input {...register("img")} placeholder="Service image" />
+                <input {...register("name", { required: true, maxLength: 50 })} placeholder="Service Name" />
+                <textarea {...register("description")} placeholder="Service description" />
                 <input type="number" {...register("price")} placeholder="Price" />
                 <input type="submit" />
             </form>

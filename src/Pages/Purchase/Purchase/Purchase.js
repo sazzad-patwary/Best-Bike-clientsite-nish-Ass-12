@@ -12,8 +12,10 @@ import { useParams } from 'react-router';
 const Purchase = () => {
     // const { _id, name, img, description, price } = service;
     // console.log(user)
+
     const { serviceId } = useParams();
     const [service, setService] = useState({})
+
     // console.log(serviceId);
 
     useEffect(() => {
@@ -52,7 +54,10 @@ const Purchase = () => {
                         </Grid>
                     </Grid>
                 </Paper>
-                <PurchaseForm></PurchaseForm>
+                <PurchaseForm
+                    key={service._id}
+                    service={service}
+                ></PurchaseForm>
             </Container>
             <Footer></Footer>
         </>

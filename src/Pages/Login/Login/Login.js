@@ -32,8 +32,8 @@ const Login = () => {
     return (
         <div>
             <Navigation></Navigation>
-            <Container>
-                <div sx={{ ml: 20, p: 5 }}>
+            <Container sx={{ py: 10 }}>
+                <div>
                     <form onSubmit={handleLoginSubmit}>
                         <TextField
                             sx={{ width: '50%', m: 1 }}

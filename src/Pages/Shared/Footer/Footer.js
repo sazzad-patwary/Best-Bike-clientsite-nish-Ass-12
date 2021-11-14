@@ -1,10 +1,34 @@
 import React from 'react';
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
+import { Container, List, ListItemText, Typography } from '@mui/material';
 
 const Footer = () => {
     return (
-        <div>
-            <h1>Footer</h1>
-        </div>
+        <footer style={{ backgroundColor: 'gray' }}>
+            <Container >
+                <Box sx={{ width: '100%', pt: 10 }}>
+                    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                        <Grid item xs={6}>
+                            <List>
+                                <ListItemText>service</ListItemText>
+                                <ListItemText>service</ListItemText>
+                                <ListItemText>service</ListItemText>
+                            </List>
+                        </Grid>
+                        <Grid item xs={6}>
+                            <List>
+                                <ListItemText>service</ListItemText>
+                                <ListItemText>service</ListItemText>
+                                <ListItemText>service</ListItemText>
+                            </List>
+                        </Grid>
+                    </Grid>
+                    <Typography sx={{ textAlign: 'center', py: 5 }}>hgjsdhngjknsdmlk</Typography>
+                </Box>
+            </Container>
+        </footer >
     );
 };
 

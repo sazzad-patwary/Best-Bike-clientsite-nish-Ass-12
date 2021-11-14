@@ -14,9 +14,9 @@ const Reviews = () => {
 
     }, [])
     return (
-        <div sx={{ my: 5 }}>
-            <Box sx={{ flexGrow: 1 }}>
-                <Typography sx={{ pl: 65, py: 5 }} variant="h3">Customer Review </Typography>
+        <div>
+            <Box sx={{ flexGrow: 1, my: 10 }}>
+                <Typography sx={{ pb: 10, textAlign: 'center' }} variant="h3">Customer Review </Typography>
                 <Container>
 
                     <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }}>

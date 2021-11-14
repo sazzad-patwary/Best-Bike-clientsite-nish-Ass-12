@@ -13,7 +13,7 @@ const AllServices = () => {
         <div>
             <Navigation></Navigation>
             <Box sx={{ flexGrow: 1 }}>
-                <Typography sx={{ pl: 65, py: 5 }} variant="h3">Bikes </Typography>
+                <Typography sx={{ py: 5, textAlign: 'center' }} variant="h3">Bikes </Typography>
                 <Container>
 
                     <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }}>
