@@ -1,17 +1,19 @@
-import { Typography } from '@mui/material';
+import { Alert, Typography } from '@mui/material';
 import axios from 'axios';
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import './AddProducts.css'
 
 const AddProducts = () => {
     const { register, handleSubmit } = useForm();
+    const [success, setSuccess] = useState(false);
     const onSubmit = data => {
         console.log(data);
 
         axios.post('http://localhost:5000/services', data)
             .then(res => {
                 console.log(res);
+                setSuccess(true);
             })
     }
     return (
@@ -24,6 +26,7 @@ const AddProducts = () => {
                 <input type="number" {...register("price")} placeholder="Price" />
                 <input type="submit" />
             </form>
+            {success && <Alert severity="success">Add products Successfully!</Alert>}
         </div>
     );
 };

@@ -1,6 +1,5 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import { Container, List, ListItemText, Typography } from '@mui/material';
 
@@ -13,19 +12,19 @@ const Footer = () => {
                         <Grid item xs={6}>
                             <List>
                                 <ListItemText>service</ListItemText>
-                                <ListItemText>service</ListItemText>
-                                <ListItemText>service</ListItemText>
+                                <ListItemText>About</ListItemText>
+                                <ListItemText>Contact</ListItemText>
                             </List>
                         </Grid>
                         <Grid item xs={6}>
                             <List>
                                 <ListItemText>service</ListItemText>
-                                <ListItemText>service</ListItemText>
-                                <ListItemText>service</ListItemText>
+                                <ListItemText>About</ListItemText>
+                                <ListItemText>Contact</ListItemText>
                             </List>
                         </Grid>
                     </Grid>
-                    <Typography sx={{ textAlign: 'center', py: 5 }}>hgjsdhngjknsdmlk</Typography>
+                    <Typography sx={{ textAlign: 'center', py: 5 }}>Copyright &copy;{new Date().getFullYear()} Best Bike | All rights reserved | Terms of Service | Privacy</Typography>
                 </Box>
             </Container>
         </footer >
