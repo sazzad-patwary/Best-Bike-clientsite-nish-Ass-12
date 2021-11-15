@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 const useServices = () => {
     const [services, setBikeServices] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://desolate-earth-84933.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setBikeServices(data))
     }, [])

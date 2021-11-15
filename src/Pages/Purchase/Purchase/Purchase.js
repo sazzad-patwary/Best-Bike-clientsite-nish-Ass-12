@@ -19,7 +19,7 @@ const Purchase = () => {
     // console.log(serviceId);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://desolate-earth-84933.herokuapp.com/services/${serviceId}`)
             .then((res) => res.json())
             .then((data) => setService(data))
     }, [])

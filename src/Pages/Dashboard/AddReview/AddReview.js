@@ -9,7 +9,7 @@ const AddReview = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('http://localhost:5000/review', data)
+        axios.post('https://desolate-earth-84933.herokuapp.com/review', data)
             .then(res => {
                 console.log(res);
             })

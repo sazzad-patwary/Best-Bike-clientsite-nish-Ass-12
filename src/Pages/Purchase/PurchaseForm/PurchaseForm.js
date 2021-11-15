@@ -32,7 +32,7 @@ const PurchaseForm = ({ service }) => {
         }
         console.log(orders);
 
-        axios.post('http://localhost:5000/order', orders)
+        axios.post('https://desolate-earth-84933.herokuapp.com/order', orders)
             .then(res => {
                 console.log(res);
             })

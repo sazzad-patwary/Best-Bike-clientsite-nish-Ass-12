@@ -11,7 +11,7 @@ const ManageOrders = () => {
     // console.log(serviceId);
 
     useEffect(() => {
-        fetch('http://localhost:5000/order')
+        fetch('https://desolate-earth-84933.herokuapp.com/order')
             .then((res) => res.json())
             .then((data) => setOrders(data))
     }, [])
